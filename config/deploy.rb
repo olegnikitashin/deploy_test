@@ -9,7 +9,8 @@ set :repo_url, 'git@github.com:olegnikitashin/deploy_test.git'
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/home/deploy/deploy_test'
-
+# set :passenger_restart_with_touch, true
+set :passenger_restart_with_touch, false # Note that `nil` is NOT the same as `false` here
 # Default value for :scm is :git
 # set :scm, :git
 
